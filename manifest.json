@@ -8,7 +8,7 @@
       "service_worker": "background.js"
     },
 
-    "permissions":["tabs","activeTab"],
+    "permissions":["tabs","activeTab","storage"],
 
     "action":{
       "default_popup": "popup.html"  
@@ -16,7 +16,7 @@
     "content_scripts": [
       {
       "matches":["<all_urls>"],
-      "js": ["getSelected.js"]
+      "js": ["content.js"]
       }
     ],
     "icons":{
